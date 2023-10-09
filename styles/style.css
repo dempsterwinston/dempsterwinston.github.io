@@ -58,26 +58,34 @@ header li a:hover {
   margin: 0;
 }
 
+.contentContainer {
+  display: flex;
+}
+
 #contentIntro {
-  margin: 5rem;
+  margin-top: 2rem;
   text-align: center;
+  flex: 4;
 }
 
 .containerPic {
   display: flex;
 }
 .containerPic .fa-solid {
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
-.containerPicContent1 {
+.containerContent {
   display: flex;
-  align-items: center;
   flex: 3;
   padding: 1rem;
   align-items: center;
+  justify-content: center;
 }
-.containerPicContent2 {
+.containerPicContent {
   flex: 1;
+}
+#picPod2 {
+  filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 1));
 }
 /* #podPic {
   position: absolute;
