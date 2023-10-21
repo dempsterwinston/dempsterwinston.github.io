@@ -4,13 +4,18 @@
   /* margin: 0;
   padding: 0; */
   font-family: "Montserrat", sans-serif;
+  line-height: calc(1em + 0.5rem);
   /* border: 1px solid black; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   margin: 0;
   padding: 0;
+  background: #f1f6f9;
 }
 
 header {
@@ -63,7 +68,9 @@ header li a:hover {
 }
 
 #contentIntro {
-  margin-top: 2rem;
+  margin: 1vh 1vw;
+  padding: 1vh 1vw;
+  border-radius: 16px;
   text-align: center;
   flex: 4;
 }
@@ -72,7 +79,7 @@ header li a:hover {
   display: flex;
 }
 .containerPic .fa-solid {
-  margin: 0 1rem;
+  margin: 0 1vw 0 5vw;
 }
 .containerContent {
   display: flex;
@@ -83,9 +90,39 @@ header li a:hover {
 }
 .containerPicContent {
   flex: 1;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background: url("/images/wave-haikei.svg");
+  border-radius: 16px;
 }
 #picPod2 {
   filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 1));
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: transparent;
+  color: #f1f6f9;
+  text-align: center;
+}
+.containerPicContent:hover .overlay {
+  opacity: 1;
+}
+
+.containerDescription {
+  margin: 2vh 0vw;
+  padding: 2vh 4vw;
+  background: #212a3e;
+  color: #f1f6f9;
+  /* text-align: center; */
 }
 /* #podPic {
   position: absolute;
